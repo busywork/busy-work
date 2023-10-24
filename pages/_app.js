@@ -1,16 +1,12 @@
-import '@/styles/globals.scss';
-import { Nunito } from 'next/font/google';
+import { ThemeProvider } from 'next-themes';
 
-const nunito = Nunito({
-  subsets: ['latin'],
-  variable: '--font-nunito',
-});
+import '@/styles/globals.scss';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className={`${nunito.variable} font-sans`}>
+    <ThemeProvider attribute="class">
       <Component {...pageProps} />
-    </main>
+    </ThemeProvider>
   );
 }
 

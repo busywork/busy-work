@@ -6,6 +6,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   mode: 'jit',
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
